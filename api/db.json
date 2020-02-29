@@ -1,0 +1,152 @@
+{
+    "urls": [
+        {
+            "name": "Kharkiv",
+            "GismeteoURL": "weather-kharkiv-5053/10-days/",
+            "WeatherURL": "weather/tenday/l/a4611f0d16cabf84398cffee7963a6f7817abe09168b0c01cfdcbb209451e775",
+            "SinoptikURL": "%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-%D1%85%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2"
+        },
+        {
+            "name": "Kyiv",
+            "GismeteoURL": "weather-kyiv-4944/10-days/",
+            "WeatherURL": "weather/tenday/l/d198c31dca17aa9ac8e4ff2e4dbdb48e4ca8c01f0fd1369998f0a09f53ef0b1d",
+            "SinoptikURL": "%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-%D0%BA%D0%B8%D0%B5%D0%B2"
+        },
+        {
+            "name": "Vinnitsia",
+            "GismeteoURL": "weather-vinnytsia-4962/10-days/",
+            "WeatherURL": "weather/tenday/l/2261b41a35498e667410cb84dfb95d455f977b64d2c02b673df410b7d9ec31ed",
+            "SinoptikURL": "%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-%D0%B2%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%B0"
+
+        },
+        {
+            "name": "Zaporizhzhya",
+            "GismeteoURL": "weather-zaporizhia-5093/10-days/",
+            "WeatherURL": "weather/tenday/l/ad98cd3144fd119b42c9e6e71e71ae4a2ce6aae7b08cdc369344b7af43ceafbf",
+            "SinoptikURL": "%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-%D0%B7%D0%B0%D0%BF%D0%BE%D1%80%D0%BE%D0%B6%D1%8C%D0%B5"
+
+        },
+        {
+            "name": "Luhansk",
+            "GismeteoURL": "weather-luhansk-5082/10-days/",
+            "WeatherURL": "weather/tenday/l/9c6dc2ab71544e5057f8156d336ab820e4fa020779dbfd8a3513e2d906f044da",
+            "SinoptikURL": "%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-%D0%BB%D1%83%D0%B3%D0%B0%D0%BD%D1%81%D0%BA"
+
+        },
+        {
+            "name": "Mykolaiv",
+            "GismeteoURL": "weather-mykolaiv-4983/10-days/",
+            "WeatherURL": "weather/tenday/l/8f9785ab85b7e846496b5889c0ba9c69d957b375d97888615efbd81b30a8cc59",
+            "SinoptikURL": "%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-%D0%BD%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2"
+        },
+        {
+            "name": "Sumy",
+            "GismeteoURL": "weather-sumy-4936/10-days/",
+            "WeatherURL": "weather/tenday/l/fb088e6509df12e6779a23ea195905ed913e124eb920100cfed204a24f488983",
+            "SinoptikURL": "%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-%D1%81%D1%83%D0%BC%D1%8B"
+        },
+        {
+            "name": "Kherson",
+            "GismeteoURL": "weather-kherson-4987/10-days/",
+            "WeatherURL": "weather/tenday/l/b90f3826b2bf3e7db49cc623550a4488fe0e6868624ad0cbeff656644488a883",
+            "SinoptikURL": "%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-%D1%85%D0%B5%D1%80%D1%81"
+        },
+        {
+            "name": "Dnipro",
+            "GismeteoURL": "weather-dnipro-5077/10-days/",
+            "WeatherURL": "weather/tenday/l/18c057565e6a77ab8db20297aa3d63a95385590d82162f1cba1058074294d53a",
+            "SinoptikURL": "погода-днепр-303007131"
+        },
+        {
+            "name": "Ivano-Frankivsk",
+            "GismeteoURL": "weather-ivano-frankivsk-4959/10-days/",
+            "WeatherURL": "weather/tenday/l/fa503af746f1329a6f6de60f9f47ac0de7be325e973166d23b294e110fc2695d",
+            "SinoptikURL": "погода-ивано-франковск"
+        },
+        {
+            "name": "Lutsk",
+            "GismeteoURL": "weather-lutsk-4928/10-days/",
+            "WeatherURL": "weather/tenday/l/9ed1b131ff328739fae15bf25e0a49f1d34501daf2aa869cb1d90a4abd5b46a5",
+            "SinoptikURL": "погода-луцк"
+        },
+        {
+            "name": "Odessa",
+            "GismeteoURL": "weather-odessa-4982/10-days/",
+            "WeatherURL": "weather/tenday/l/772c48ef169ca33289f573cfc0575bdb4b8de5428afa579db4f58b6409da27a5",
+            "SinoptikURL": "погода-одесса"
+        },
+        {
+            "name": "Ternopil",
+            "GismeteoURL": "weather-ternopil-4951/10-days/",
+            "WeatherURL": "weather/tenday/l/458e68cf9072ee1bfabbfb406893a31efa89128c2a3e9a7e36b0c9c5e3913c9d",
+            "SinoptikURL": "погода-тернополь"
+        },
+        {
+            "name": "Khmelnytskyi",
+            "GismeteoURL": "weather-khmelnytskyi-4952/10-days/",
+            "WeatherURL": "weather/tenday/l/721275a2e48c2ce13c360c2d74dd3067f31a03a7d91aec6cf4ed3e75a9fef747",
+            "SinoptikURL": "погода-хмельницкий"
+        },
+        {
+            "name": "Donetsk",
+            "GismeteoURL": "weather-donetsk-5080/10-days/",
+            "WeatherURL": "weather/tenday/l/09967a3efc295696927d2dfb04bfa3158dd01196d1224dd072bc6874666002c1",
+            "SinoptikURL": "погода-донецк"
+        },
+        {
+            "name": "Lviv",
+            "GismeteoURL": "weather-lviv-4949/10-days/",
+            "WeatherURL": "weather/tenday/l/98ef35fcef7257c1313f4b13a5ccb58f5db8da0afe41bb717c6ba097579ffa32",
+            "SinoptikURL": "погода-львов"
+        },
+        {
+            "name": "Poltava",
+            "GismeteoURL": "weather-poltava-4957/10-days/",
+            "WeatherURL": "weather/tenday/l/147ae21468642ff98df8dd8cea2733c8ef8620d5f44c39223151e5643a6353d9",
+            "SinoptikURL": "погода-полтава"
+        },
+        {
+            "name": "Uzhhorod",
+            "GismeteoURL": "weather-uzhhorod-4969/10-days/",
+            "WeatherURL": "weather/tenday/l/d1a4c2342d5998ab318ea3d2347dde79f3c82ce82334001e2b2299d5011f6f6d",
+            "SinoptikURL": "погода-ужгород"
+        },
+        {
+            "name": "Cherkasy",
+            "GismeteoURL": "weather-cherkasy-4956/10-days/",
+            "WeatherURL": "weather/tenday/l/8475cf6880ae9b5b9c88ae4b47a366e4e1c489327bb98a109e38461ad8e78972",
+            "SinoptikURL": "погода-черкассы"
+        },
+        {
+            "name": "Zhytomyr",
+            "GismeteoURL": "weather-zhytomyr-4943/10-days/",
+            "WeatherURL": "weather/tenday/l/c9f6f901e18cf9ff8c430ac48c811a40d8b6a852c024fa9f447098901061c8e2",
+            "SinoptikURL": "погода-житомир"
+        },
+        {
+            "name": "Kryvyi Rih",
+            "GismeteoURL": "weather-kryvyi-rih-4978/10-days/",
+            "WeatherURL": "weather/tenday/l/01c0e202f3c2c96cf49ac3300c9676c30d7de41f592977593b643368584f8306",
+            "SinoptikURL": "погода-кривой-рог"
+        },
+        {
+            "name": "Mariupol",
+            "GismeteoURL": "weather-mariupol-5104/10-days/",
+            "WeatherURL": "weather/tenday/l/c6f8e11c75a4873d822e3080bba130b8fb168dbaa90b0ad8a07725cc4a82e8b6",
+            "SinoptikURL": "погода-мариуполь"
+        },
+        {
+            "name": "Rivne",
+            "GismeteoURL": "eather-rivne-4940/10-days/",
+            "WeatherURL": "weather/tenday/l/dae372cfea50c952738d812ef95a0e595266ff85bb98f23ff15f034384dd48f9",
+            "SinoptikURL": "погода-ровно"
+        },
+        {
+            "name": "Chernihiv",
+            "GismeteoURL": "weather-chernihiv-4923/10-days/",
+            "WeatherURL": "weather/tenday/l/d5a591c0fea07a88bafe951d05212c82c562b62777e06492bf0a9d0598e7a180",
+            "SinoptikURL": "погода-чернигов"
+        }
+
+    ]
+  }
