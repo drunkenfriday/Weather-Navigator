@@ -136,9 +136,8 @@ export default {
   opacity: 100%;
   max-width: 100%;
   position: fixed;
-  left: 25%;
-  top: 5%;
-  width: 50%;
+  left: 33%;
+  width: 33%;
 }
 .form-group {
   margin: 10px;
