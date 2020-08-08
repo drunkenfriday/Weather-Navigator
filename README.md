@@ -17,10 +17,9 @@ $ npm install
 
 # serve with hot reload at localhost:3000
 
-For correct working, please run next 3 commands 
-1. npm run api //running at localhost:8080
-2. npm run parser //running at localhost:5000
-3. npm run dev //running at localhost:3000
+For correct working, please run next 2 commands
+1. npm run parser //running at localhost:5000
+2. npm run dev //running at localhost:3000
 
 
 

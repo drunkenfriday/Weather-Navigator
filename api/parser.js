@@ -1,6 +1,7 @@
 const fastify = require('fastify')();
 const puppeteer = require('puppeteer');
 const axios = require('axios').default;
+const pages = require('./db.json');
 let browser
 puppeteer.launch().then(result => browser = result)
 
@@ -78,7 +79,8 @@ const getGismeteo = async function (city, date) {
 
         daysAmount = (currentDate - now) / 86400000
 
-    const url = (await axios.get(`http://localhost:8080/urls?name=${city}`)).data[0].GismeteoURL
+    const cityObject = pages.urls.find(item => item.name === city)
+        url = cityObject.GismeteoURL
 
     await gismeteo.goto(`https://www.gismeteo.ua/${url}`, { timeout: 0 })
 
@@ -148,10 +150,12 @@ const getWeather = async function (city, date) {
 
         daysAmount = (currentDate - now) / 86400000
 
-    const url = (await axios.get(`http://localhost:8080/urls?name=${city}`)).data[0].WeatherURL
+        const cityObject = pages.urls.find(item => item.name === city)
+        url = cityObject.WeatherURL    
+        
     await weather.goto(`https://weather.com/${url}`, { timeout: 0 })
 
-    const temperaturesList = (await weather.$$('td.temp'))[daysAmount]
+    const temperaturesList = (await weather.$$('[data-testid=detailsTemperature]'))[daysAmount]
     const temperatures = await temperaturesList.$$('span')
     const maxTemp = await temperatures[0].evaluate(node => node.innerText),
         minTemp = await temperatures[2].evaluate(node => node.innerText)
@@ -174,20 +178,20 @@ const getWeather = async function (city, date) {
     }
 
     
-    const windList = (await weather.$$('td.wind'))[daysAmount]
+    const windList = (await weather.$$('div[data-testid=wind]'))[daysAmount]
     const windSpan = await windList.$('span')
     const wind = await windSpan.evaluate(node => node.innerText)
     const windStr = wind.split(' ')[1]
 
     forecast.wind = Math.round(windStr / 2.237) + ' m/s (mean)'
 
-    const precipList = (await weather.$$('td.precip'))[daysAmount]
-    const precipSpan = await precipList.$('span>span')
+    const precipList = (await weather.$$('[data-testid="Precip"]'))[daysAmount]
+    const precipSpan = await precipList.$('span')
     const precips = await precipSpan.evaluate(node => node.innerText)
 
     forecast.precips = precips
 
-    const overcastList = (await weather.$$('td.description'))[daysAmount]
+    const overcastList = (await weather.$$('[data-testid="wxIcon"]'))[daysAmount]
     const overcastSpan = await overcastList.$('span')
     const overcast = await overcastSpan.evaluate(node => node.innerText)
 
@@ -219,7 +223,8 @@ const getSinoptik = async function (city, date) {
         }
     });
 
-    const url = (await axios.get(`http://localhost:8080/urls?name=${city}`, { timeout: 0 })).data[0].SinoptikURL
+    const cityObject = pages.urls.find(item => item.name === city)
+         url = cityObject.SinoptikURL    
     await sinoptik.goto(`https://sinoptik.ua/${url}/${date}`)
     sinoptik.screenshot({ path: 'relative', type: 'jpeg' })
 
@@ -292,14 +297,15 @@ fastify.get('/', async (request, reply) => {
 
 
 fastify.get('/cities', async (request, reply) => {
-    let arr = await axios.get('http://localhost:8080/urls')
-    let cities = arr.data.map(el => el.name)
+    let arr = pages.urls;
+    let cities = arr.map(el => el.name)
     return cities
 })
 
 fastify.get('/resourses', async (request, reply) => {
     const resourses = Object.keys(methods)
-    return resourses
+   
+     return resourses
 })
 
 fastify.post('/', async (request, reply) => {
